@@ -10,6 +10,7 @@ public class Bill extends BaseModel{
 	private Operator operator;
 	private BillStatus billStatus;
 	private List<Payment> payments;
+	
 	public Date getEndTime() {
 		return endTime;
 	}

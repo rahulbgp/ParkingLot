@@ -3,6 +3,11 @@ package com.parkinglot.models;
 import java.util.Date;
 
 public class Ticket  extends BaseModel{
+	@Override
+	public String toString() {
+		return "Ticket [number=" + number + ", entryTime=" + entryTime + ", vehicle=" + vehicle + ", parkingSpot="
+				+ parkingSpot + ", gate=" + gate + ", operator=" + operator + "]";
+	}
 	private String number;
 	private Date entryTime;
 	private Vehicle vehicle;
